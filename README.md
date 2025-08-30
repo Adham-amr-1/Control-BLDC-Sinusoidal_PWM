@@ -132,28 +132,6 @@ cd Control-BLDC-Sinusoidal_PWM
 
 ---
 
-## 🔧 Example API / Code Snippets
-
-```c
-// Example: linear interpolation between two LUT values
-uint16_t interpolate_lut(const uint16_t *lut, uint32_t index, uint16_t frac) {
-    // lut: table of N samples
-    // index: integer index into lut
-    // frac: fractional part (0..65535) for interpolation
-    uint32_t a = lut[index];
-    uint32_t b = lut[index + 1]; // ensure wrap or guard
-    uint32_t diff = (b >= a) ? (b - a) : (65535 + b - a);
-    return (uint16_t)(a + ((diff * frac) >> 16));
-}
-
-// Example: mapping ADC to CCR (assuming ARR = 3599)
-uint32_t map_adc_to_ccr(uint32_t adc_val) {
-    // adc_val: 0..4095 (12-bit ADC)
-    const uint32_t ARR = 3599;
-    return (adc_val * ARR) / 4095;
-}
-```
-
 > The full interpolation implementation and LUT-format are in `Core/Src/interpolation.c` and `Tools/LookUpTableGenerate.py`.
 
 ---
