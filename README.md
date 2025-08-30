@@ -1,8 +1,5 @@
 # 🚗 E-RALLY V2 – Sinusoidal PWM BLDC Motor Controller (STM32 Blue Pill)
 
-```markdown
-# E-RALLY V2 – Sinusoidal PWM BLDC Motor Controller (STM32 Blue Pill)
-
 This project presents a **Sinusoidal PWM (Interpolated)** control algorithm for a **3-phase BLDC motor**, implemented on the **STM32F103C6T6** microcontroller (commonly known as the "Blue Pill"). It is an evolution of the E-RALLY V1 Trapezoidal controller, focused on delivering **smoother torque**, **lower acoustic noise**, and **reduced cogging** using a lookup-table and runtime interpolation.
 
 Designed for the **E-RALLY electric vehicle prototype**, the firmware integrates Hall-effect sensor feedback, high-resolution PWM generation, ADC-based throttle control (with filtering), and multiple safety mechanisms to enable reliable motor control in a compact MCU.
