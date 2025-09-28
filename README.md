@@ -10,8 +10,7 @@ Designed for the **E-RALLY electric vehicle prototype**, the firmware integrates
 
 Developed by the Embedded Systems Team of the E-RALLY competition vehicle:
 
-- **Adham Amr** – LUT generator, Interpolation logic, PWM mapping, system integration
-- **Amira Muhammed** - Debugging, Testing and Validation 
+- **Adham Amr** – LUT generator, Interpolation logic, PWM mapping, system integration, Debugging, Testing and Validation
 
 ---
 
